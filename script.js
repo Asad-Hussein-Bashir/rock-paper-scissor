@@ -12,3 +12,11 @@ function getComputerChoice() {
       return "scissor";
   }
 }
+
+function getHumanChoice() {
+  const humanChoice = prompt("Rock Paper Scissor");
+
+  console.log(`the human chose ${humanChoice}`);
+}
+
+getHumanChoice();
