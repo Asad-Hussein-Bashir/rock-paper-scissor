@@ -63,7 +63,16 @@ function playGame() {
     playRound(humanSelection, computerSelection);
   }
 
-  console.log(humanScore, computerScore);
+  if (humanScore > computerScore) {
+    alert("Congratulations You Won!");
+  } else if (humanScore < computerScore) {
+    alert("Unlucky You Lost!");
+  } else {
+    alert("Game was a Tie");
+  }
+
+  console.log(`You scored ${humanScore} points`);
+  console.log(`Computer scored ${computerScore} points`);
 }
 
 playGame();
